@@ -49,26 +49,64 @@ musicBtn.addEventListener('click', () => {
   isPlaying = !isPlaying;
 });
 
-// --- Logika Pop-Up Modal Profil Ridho ---
+// --- Logika Modal Ridho dengan Lock Passcode ---
 const modal = document.getElementById('ridho-modal');
 const openBtn = document.getElementById('open-ridho-modal');
 const closeBtn = document.getElementById('close-ridho-modal');
 
+const lockScreen = document.getElementById('modal-lock-screen');
+const secretContent = document.getElementById('modal-secret-content');
+const passInput = document.getElementById('passcode-input');
+const unlockBtn = document.getElementById('passcode-btn');
+const errorMsg = document.getElementById('passcode-error');
+
+// 🔑 GANTI SANDI DI SINI (bebas mau angka/kata, misal: "1205" atau "putri")
+const SECRET_PASSCODE = "261148"; 
+
+function resetModalState() {
+  lockScreen.style.display = 'block';
+  secretContent.style.display = 'none';
+  passInput.value = '';
+  errorMsg.textContent = '';
+}
+
 if (openBtn && modal && closeBtn) {
-  // Buka Modal
+  // Buka Modal (Otomatis Lock)
   openBtn.addEventListener('click', () => {
+    resetModalState();
     modal.classList.add('active');
   });
 
-  // Tutup Modal lewat Tombol X
+  // Tutup Modal
   closeBtn.addEventListener('click', () => {
     modal.classList.remove('active');
   });
 
-  // Tutup Modal jika klik di luar area konten
   modal.addEventListener('click', (e) => {
     if (e.target === modal) {
       modal.classList.remove('active');
+    }
+  });
+
+  // Fungsi Cek Sandi
+  function checkPasscode() {
+    if (passInput.value === SECRET_PASSCODE) {
+      lockScreen.style.display = 'none';
+      secretContent.style.display = 'block';
+      errorMsg.textContent = '';
+    } else {
+      errorMsg.textContent = 'Sandi salah, coba lagi ya! 🔒';
+      passInput.value = '';
+      passInput.focus();
+    }
+  }
+
+  unlockBtn.addEventListener('click', checkPasscode);
+
+  // Biar bisa pencet ENTER di keyboard
+  passInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      checkPasscode();
     }
   });
 }
