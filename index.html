@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Capsule </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Efek kelopak bunga di background -->
+    <div class="petals-container" aria-hidden="true">
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+        <div class="petal"></div>
+    </div>
+
+    <!-- Menu Navigasi Melayang (Floating Dock) -->
+    <nav class="dock glass">
+        <a href="#welcome" class="nav-item">✨</a>
+        <a href="#profiles" class="nav-item">👥</a>
+        <a href="#diary" class="nav-item">📖</a>
+        <a href="#gallery" class="nav-item">🖼️</a>
+        <div class="divider"></div>
+        <button id="music-toggle" class="nav-item music-btn">🎵</button>
+    </nav>
+
+    <!-- Bagian 1: Halaman Paling Awal -->
+    <section id="welcome" class="hero-section">
+        <div class="hero-content glass-card">
+            <p id="live-greeting" class="greeting">Memuat waktu...</p>
+            <h1 class="main-title">Memory Of US</h1>
+            <p class="subtitle">DORI</p>
+
+            <div class="scroll-indicator">
+                <p>Scroll Down</p>
+                <div class="arrow">↓</div>
+            </div>
+        </div>
+    </section>
+    <!-- Bagian 2: Profil (Konsep Buku Terbuka) -->
+    <section id="profiles" class="profile-section">
+        <div class="section-header">
+            <h2>Dua Orang yang Berbeda</h2>
+            <p>Akhirny Bersama.</p>
+        </div>
+
+        <!-- Container Buku -->
+        <div class="book-container">
+
+            <!-- Halaman Kiri: Ridho -->
+            <div class="book-page left-page glass-card">
+                <div class="profile-img-placeholder">
+                    <!-- Nanti ganti path gambarnya dengan foto lo -->
+                    <img src="assets/images/IMG_20260714_101653.jpg" alt="Foto Ridho"
+                        onerror="this.src='https://via.placeholder.com/150/222230/F4F4F6?text=Foto+Ridho'">
+                </div>
+                <h3 class="profile-name">Ridho Arban Syah</h3>
+                <p class="profile-role">The One Who Code</p>
+
+                <div class="bio-list">
+                    <div class="bio-item">
+                        <span class="bio-label">Lahir:</span>
+                        <span class="bio-value">11 Juli 2008 </span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">Love Language:</span>
+                        <span class="bio-value">Physical Touch</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">Kesukaan:</span>
+                        <span class="bio-value">Mie ayam, Dimsum, Udang Keju, Matcha Latte, Coffe Latte, ?</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">Warna Favorit:</span>
+                        <span class="bio-value">Hitam, Biru, Navy</span>
+                    </div>
+                </div>
+                <!-- Tombol Khusus Profil Ridho -->
+                <button id="open-ridho-modal" class="see-more-btn">
+                    <span>Sisi Lain Ridho</span> ✨
+                </button>
+            </div>
+
+            <!-- Garis Tengah Buku -->
+            <div class="book-spine"></div>
+
+            <!-- Halaman Kanan: Puput -->
+            <div class="book-page right-page glass-card">
+                <div class="profile-img-placeholder">
+                    <!-- Nanti ganti path gambarnya dengan foto Puput -->
+                    <img src="assets/images/IMG-20260718-WA0000.jpg" alt="Foto Puput"
+                        onerror="this.src='https://via.placeholder.com/150/222230/F4F4F6?text=Foto+Puput'">
+                </div>
+                <h3 class="profile-name">Putri Nuriyanti</h3>
+                <p class="profile-role">The One Who Makes Me Smile</p>
+
+                <div class="bio-list">
+                    <div class="bio-item">
+                        <span class="bio-label">Lahir:</span>
+                        <span class="bio-value">26 Januari 2008</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">Love Language:</span>
+                        <span class="bio-value">?</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">Kesukaan:</span>
+                        <span class="bio-value">Dimsum, Matcha, Coffe, ?</span>
+                    </div>
+                    <div class="bio-item">
+                        <span class="bio-label">Warna Favorit:</span>
+                        <span class="bio-value">Hitam, Biru</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Bagian 3: Notes (Masa Lalu, Sekarang, Depan) -->
+    <section id="diary" class="notes-section">
+        <div class="section-header">
+            <h2>Catatan Hati</h2>
+            <p>Tentang apa yang telah lewat dan yang akan datang.</p>
+        </div>
+
+        <div class="notes-container">
+
+            <!-- Note dari Ridho -->
+            <div class="note-card glass-card ridho-note">
+                <div class="note-author">
+                    <span class="author-icon">✒️</span>
+                    <span>Catatan dari Ridho</span>
+                </div>
+
+                <div class="note-content">
+                    <!-- Past -->
+                    <p class="note-paragraph">
+                        <span class="timeline-dot past"></span>
+                        Seandainya aku bisa memilih satu musim untuk kembali, aku tidak ingin kembali untuk mengenalmu.
+                        Karena sejak kecil aku
+                        sudah mengenalmu. Aku hanya ingin kembali agar aku benar-benar menjadi bagian dari setiap
+                        langkahmu. Bagiku, setiap
+                        <em>
+                            <b>waktu yang kuhabiskan bersamamu—entah cuacanya bagus, tidak bagus, karena cuacany tepat,
+                                ataupun saat kita
+                                sama-sama terluka—tetap terasa indah.
+                            </b>
+                        </em>
+                        Yang membuatku menangis bukan karena aku bersamamu sekarang... melainkan karena aku tidak pernah
+                        benar-benar ada di masa
+                        yang paling ingin kujalani bersamamu.
+                    </p>
+
+                    <!-- Now -->
+                    <p class="note-paragraph">
+                        <span class="timeline-dot present"></span>
+                        Sekarang aku akhirnya bisa berjalan di sampingmu. Aku bisa mendengar tawamu, menggenggam
+                        tanganmu, dan melihatmu dari
+                        dekat seperti yang dulu hanya bisa kubayangkan.
+                        <em>
+                            <b>waktu yang kuhabiskan bersamamu—entah cuacanya bagus, tidak bagus, karena cuacany tepat,
+                                ataupun saat kita
+                                sama-sama terluka—tetap terasa indah.
+                            </b>
+                        </em>
+                        Tapi di balik semua kebahagiaan itu, masih ada
+                        bagian dari diriku yang
+                        diam-diam menangisi waktu yang sudah berlalu. Aku bahagia karena akhirnya memilikimu, namun pada
+                        saat yang sama aku
+                        masih berduka atas waktu yang tidak pernah bisa kita miliki bersama.
+
+                        <!-- Future-->
+                    <p class="note-paragraph">
+                        <span class="timeline-dot future"></span>
+                        Aku tidak tahu apa yang akan menunggu kita di masa depan. Aku juga tidak tahu apakah luka ini
+                        suatu hari akan
+                        benar-benar tenang atau akan tetap hidup bersamaku. Yang kutahu hanyalah, jika suatu hari nanti
+                        aku masih berjalan
+                        bersamamu, aku ingin setiap langkah yang kita buat menjadi waktu yang tidak akan lagi kita
+                        sesali. Karena aku sudah
+                        kehilangan begitu banyak waktu... dan aku tidak ingin kehilangan waktu bersamamu lagi.. dan
+                        <em>
+                            <b>waktu yang kuhabiskan bersamamu—entah cuacanya bagus, tidak bagus, karena cuacany tepat,
+                                ataupun saat kita
+                                sama-sama terluka—tetap terasa indah.
+                            </b>
+                        </em>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Note dari Putri (Kosong) -->
+            <div class="note-card glass-card putri-note empty-note">
+                <div class="note-author">
+                    <span class="author-icon">🤍</span>
+                    <span>Catatan dari Putri</span>
+                </div>
+
+                <div class="empty-state">
+                    <p>Halaman ini masih kosong.</p>
+                    <span>Ruang ini menunggumu untuk menceritakan isi hatimu, kapan pun kamu siap.</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Bagian 4: Galeri Kenangan -->
+    <section id="gallery" class="gallery-section">
+        <div class="section-header">
+            <h2>Rekam Jejak Kita</h2>
+            <p>Momen yang tak ingin dilupakan oleh waktu.</p>
+        </div>
+
+        <div class="gallery-timeline">
+
+            <!-- Momen 1 -->
+            <div class="memory-item">
+                <div class="memory-date">
+                    <span class="date-badge">7 Juni 2026</span>
+                </div>
+                <div class="memory-card glass-card">
+                    <div class="memory-photo">
+                        <!-- Ganti src dengan path foto kalian nanti -->
+                        <img src="assets/images/20260607_005437_699_IMG_0015.JPG" alt="Jalan-jalan pertama">
+                    </div>
+                    <div class="memory-photo">
+                        <!-- Ganti src dengan path foto kalian nanti -->
+                        <img src="assets/images/IMG_20260607_150724.jpg" alt="Jalan-jalan pertama">
+                    </div>
+                    <div class="memory-photo">
+                        <!-- Ganti src dengan path foto kalian nanti -->
+                        <img src="assets/images/IMG_20260607_152259.jpg" alt="Jalan-jalan pertama">
+                    </div>
+                    <div class="memory-photo">
+                        <!-- Ganti src dengan path foto kalian nanti -->
+                        <img src="assets/images/IMG_20260607_161914.jpg" alt="Jalan-jalan pertama">
+                    </div>
+                    <div class="memory-caption">
+                        <p>First Date, so AKWARD.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Momen 2 -->
+            <div class="memory-item">
+                <div class="memory-date">
+                    <span class="date-badge">26 Juli 2026</span>
+                </div>
+                <div class="memory-card glass-card">
+                    <div class="memory-photo">
+                        <!-- Ganti src dengan path foto kalian nanti -->
+                        <img src="assets/images/IMG_20260726_144230.jpg" alt="Jalan-jalan pertama">
+                    </div>
+                    <div class="memory-photo">
+                        <!-- Ganti src dengan path foto kalian nanti -->
+                        <img src="assets/images/IMG_20260726_150039.jpgs" alt="Jalan-jalan pertama">
+                    </div>
+                    <div class="memory-photo">
+                        <!-- Ganti src dengan path foto kalian nanti -->
+                        <img src="assets/images/IMG_20260726_145450.jpg" alt="Jalan-jalan pertama">
+                    </div>
+                    <div class="memory-photo">
+                        <!-- Ganti src dengan path foto kalian nanti -->
+                        <img src="assets/images/IMG_20260726_145943.jpg" alt="Jalan-jalan pertama">
+                    </div>
+                    <div class="memory-photo">
+                        <!-- Ganti src dengan path foto kalian nanti -->
+                        <img src="assets/images/IMG_20260726_150318.jpg" alt="Jalan-jalan pertama">
+                    </div>
+                    <div class="memory-caption">
+                        <p>Main Kerumah</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Momen 3 (Bisa ditambah terus ke bawah)
+            <div class="memory-item">
+                <div class="memory-date">
+                    <span class="date-badge">Hari Ini</span>
+                </div>
+                <div class="memory-card glass-card">
+                    <div class="memory-photo">
+                        <img src="https://via.placeholder.com/600x350/222230/F4F4F6?text=Foto+Terbaru" alt="Momen hari ini">
+                    </div>
+                    <div class="memory-caption">
+                        <p>Dan masih banyak lagi memori yang bakal kita taruh di sini nanti.</p>
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </section>
+
+    <!-- Spasi Kosong di bawah biar dock menu nggak nutupin foto terakhir -->
+    <div style="height: 120px;"></div>
+
+    <!-- Pop-Up Modal Isi Hati / Luka Masa Lalu -->
+    <div id="ridho-modal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-content glass-card">
+            <button id="close-ridho-modal" class="modal-close">&times;</button>
+
+            <div class="modal-header">
+                <span class="modal-tag">Ruang Personal</span>
+                <h3>Di Balik Layar</h3>
+            </div>
+
+            <div class="modal-body">
+                <p>
+                    Kadang ada rasa sedih karena aku nggak bisa ada di masa lalu atau masa-masa sekolahmu. Tapi aku
+                    sedang belajar menerima
+                    bahwa waktu yang paling berharga adalah saat ini—saat kita memilih untuk tumbuh bareng dan saling
+                    mengenal lebih dalam..
+                </p>
+                <p>
+                    Aku punya luka dan ketakutan tersendiri tentang kesepian. Tapi di balik semua itu, keinginan
+                    terbesarku sederhana: ingin
+                    bisa jadi orang yang paling kamu percaya, dan jadi tempat teduh yang aman buat kamu.
+                </p>
+                <p>
+                    Aku sadar ekspektasiku kadang bikin kita berdua capek. Aku masih terus belajar untuk memaklumi masa
+                    lalu dan
+                    kekuranganmu, sama seperti aku belajar memaklumi diriku sendiri.
+                </p>
+                <p class="highlight-text">
+                    Aku masih terus belajar untuk memaklumi masa lalu dan kekuranganmu, luka ini akan lama sembuhnya
+                    tapi Terima kasih sudah telah memilihku. 🤍
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pemutar Musik Rahasia -->
+    <audio id="bg-music" loop>
+        <source src="assets/audio/wave to earth - 사랑으로 (love.).mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

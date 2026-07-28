@@ -1,0 +1,745 @@
+ /* Pengaturan Warna Dasar & Font */
+ :root {
+     --bg-dark: #0F0F13;
+     --glass-bg: rgba(255, 255, 255, 0.03);
+     --glass-border: rgba(255, 255, 255, 0.08);
+     --sakura-pink: #F472B6;
+     --maple-warm: #FB923C;
+     --text-main: #F4F4F6;
+     --text-muted: #A1A1AA;
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+     scroll-behavior: smooth;
+ }
+
+ body {
+     background-color: var(--bg-dark);
+     color: var(--text-main);
+     overflow-x: hidden;
+     /* Ambient glow lembut di tengah layar */
+     background-image: radial-gradient(circle at 50% 50%, rgba(244, 114, 182, 0.05), transparent 60%);
+ }
+
+ /* Base Glassmorphism Class */
+ .glass {
+     background: var(--glass-bg);
+     backdrop-filter: blur(24px);
+     -webkit-backdrop-filter: blur(24px);
+     border: 1px solid var(--glass-border);
+ }
+
+ /* Floating Dock (Menu) */
+ .dock {
+     position: fixed;
+     bottom: 32px;
+     left: 50%;
+     transform: translateX(-50%);
+     display: flex;
+     align-items: center;
+     gap: 20px;
+     padding: 12px 24px;
+     border-radius: 99px;
+     z-index: 100;
+     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+ }
+
+ .nav-item {
+     text-decoration: none;
+     font-size: 20px;
+     opacity: 0.5;
+     transition: all 0.3s ease;
+     background: none;
+     border: none;
+     cursor: pointer;
+ }
+
+ .nav-item:hover,
+ .nav-item.active {
+     opacity: 1;
+     transform: translateY(-3px) scale(1.1);
+     text-shadow: 0 0 10px var(--sakura-pink);
+ }
+
+ .divider {
+     width: 1px;
+     height: 24px;
+     background: var(--glass-border);
+ }
+
+ /* Hero Section (Welcome) */
+ .hero-section {
+     min-height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding: 20px;
+ }
+
+ .hero-content {
+     padding: 48px;
+     border-radius: 32px;
+     max-width: 600px;
+     background: rgba(20, 20, 25, 0.6);
+     backdrop-filter: blur(30px);
+     border: 1px solid var(--glass-border);
+     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+ }
+
+ .greeting {
+     color: var(--sakura-pink);
+     font-size: 16px;
+     font-weight: 500;
+     letter-spacing: 2px;
+     text-transform: uppercase;
+     margin-bottom: 16px;
+ }
+
+ .main-title {
+     font-size: 48px;
+     font-weight: 700;
+     margin-bottom: 16px;
+     background: linear-gradient(135deg, var(--sakura-pink), var(--maple-warm));
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+ }
+
+ .subtitle {
+     color: var(--text-muted);
+     font-size: 18px;
+     line-height: 1.5;
+     margin-bottom: 40px;
+ }
+
+ .scroll-indicator {
+     font-size: 12px;
+     color: var(--text-muted);
+     opacity: 0.7;
+     animation: bounce 2s infinite;
+ }
+
+ @keyframes bounce {
+
+     0%,
+     20%,
+     50%,
+     80%,
+     100% {
+         transform: translateY(0);
+     }
+
+     40% {
+         transform: translateY(10px);
+     }
+
+     60% {
+         transform: translateY(5px);
+     }
+ }
+
+ /* Animasi Kelopak Sakura Jatuh (Simpel) */
+ .petals-container {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     pointer-events: none;
+     z-index: -1;
+ }
+
+ .petal {
+     position: absolute;
+     width: 12px;
+     height: 12px;
+     background: rgba(244, 114, 182, 0.4);
+     /* Warna Sakura */
+     border-radius: 15px 0 15px 0;
+     animation: falling 10s linear infinite;
+ }
+
+ .petal:nth-child(1) {
+     left: 10%;
+     animation-duration: 12s;
+     animation-delay: 0s;
+ }
+
+ .petal:nth-child(2) {
+     left: 30%;
+     animation-duration: 9s;
+     animation-delay: 2s;
+ }
+
+ .petal:nth-child(3) {
+     left: 50%;
+     animation-duration: 14s;
+     animation-delay: 4s;
+ }
+
+ .petal:nth-child(4) {
+     left: 70%;
+     animation-duration: 10s;
+     animation-delay: 1s;
+ }
+
+ .petal:nth-child(5) {
+     left: 90%;
+     animation-duration: 11s;
+     animation-delay: 3s;
+ }
+
+ @keyframes falling {
+     0% {
+         transform: translateY(-50px) rotate(0deg);
+         opacity: 0;
+     }
+
+     10% {
+         opacity: 1;
+     }
+
+     90% {
+         opacity: 1;
+     }
+
+     100% {
+         transform: translateY(100vh) rotate(360deg);
+         opacity: 0;
+     }
+ }
+
+/* --- Bagian 2: Profil (Buku Terbuka) --- */
+.profile-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.section-header h2 {
+    font-size: 32px;
+    background: linear-gradient(135deg, var(--text-main), var(--text-muted));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 8px;
+}
+
+.section-header p {
+    color: var(--sakura-pink);
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/* Container Buku */
+.book-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+    width: 100%;
+    gap: 20px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .book-container {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 0;
+    }
+}
+
+/* Desain Halaman */
+.book-page {
+    flex: 1;
+    background: rgba(22, 22, 30, 0.4);
+    backdrop-filter: blur(24px);
+    padding: 40px;
+    border-top: 1px solid var(--glass-border);
+    border-bottom: 1px solid var(--glass-border);
+    transition: transform 0.3s ease;
+}
+
+/* Sudut membulat khusus untuk tampilan Desktop (Buku) */
+@media (min-width: 768px) {
+    .left-page {
+        border-left: 1px solid var(--glass-border);
+        border-radius: 24px 0 0 24px;
+        padding-right: 60px;
+    }
+
+    .right-page {
+        border-right: 1px solid var(--glass-border);
+        border-radius: 0 24px 24px 0;
+        padding-left: 60px;
+    }
+
+    /* Efek tulang buku / Lipatan tengah */
+    .book-spine {
+        width: 2px;
+        background: linear-gradient(to bottom,
+                transparent,
+                rgba(255, 255, 255, 0.1),
+                rgba(244, 114, 182, 0.2),
+                /* Bias sakura di lipatan */
+                rgba(255, 255, 255, 0.1),
+                transparent);
+        z-index: 10;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+}
+
+/* Konten di dalam Profil */
+.profile-img-placeholder {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 24px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid rgba(244, 114, 182, 0.3);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    text-align: center;
+    font-size: 24px;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.profile-role {
+    text-align: center;
+    font-size: 14px;
+    color: var(--maple-warm);
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Daftar Biodata */
+.bio-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.bio-item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 8px;
+}
+
+.bio-label {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.bio-value {
+    font-size: 15px;
+    color: var(--text-main);
+    line-height: 1.4;
+}
+
+/* --- Bagian 3: Notes Section --- */
+.notes-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.notes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 700px;
+}
+
+/* Card Styling */
+.note-card {
+    padding: 40px;
+    border-radius: 24px;
+    position: relative;
+    background: rgba(22, 22, 30, 0.5);
+    /* Sedikit lebih gelap dari profil */
+}
+
+/* Sedikit beda warna border biar khas */
+.ridho-note {
+    border-left: 3px solid var(--maple-warm);
+}
+
+.putri-note {
+    border-left: 3px solid var(--sakura-pink);
+}
+
+.note-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+    font-size: 14px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 16px;
+}
+
+.note-author span {
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+/* Konten Teks Ridho dengan Garis Timeline */
+.note-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    position: relative;
+}
+
+/* Garis penghubung di kiri teks */
+.note-content::before {
+    content: '';
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    bottom: 10px;
+    width: 1px;
+    background: linear-gradient(to bottom, var(--text-muted) 0%, transparent 100%);
+    opacity: 0.3;
+}
+
+.note-paragraph {
+    position: relative;
+    padding-left: 32px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: var(--text-main);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Titik Timeline (Masa Lalu, Sekarang, Depan) */
+.timeline-dot {
+    position: absolute;
+    left: 0;
+    top: 8px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.timeline-dot.past {
+    background: var(--text-muted);
+}
+
+.timeline-dot.present {
+    background: var(--maple-warm);
+}
+
+.timeline-dot.future {
+    background: var(--sakura-pink);
+    box-shadow: 0 0 12px var(--sakura-pink);
+}
+
+/* Note Putri (Empty State) */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    opacity: 0.6;
+}
+
+.empty-state p {
+    font-size: 18px;
+    color: var(--sakura-pink);
+    font-style: italic;
+}
+
+.empty-state span {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.empty-note {
+    background: rgba(22, 22, 30, 0.2);
+    /* Lebih transparan karena kosong */
+    border: 1px dashed var(--glass-border);
+    border-left: 3px solid var(--sakura-pink);
+}
+
+/* --- Bagian 4: Gallery Timeline --- */
+.gallery-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+.gallery-timeline {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    /* Jarak antar foto */
+    position: relative;
+}
+
+/* Garis vertikal di kiri untuk menyambungkan tanggal */
+.gallery-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    /* Posisi garis */
+    width: 2px;
+    background: linear-gradient(to bottom, var(--sakura-pink), var(--maple-warm), transparent);
+    opacity: 0.3;
+}
+
+/* Item Memori */
+.memory-item {
+    position: relative;
+    padding-left: 60px;
+    /* Memberi ruang untuk garis timeline */
+}
+
+/* Tanggal (Badge) */
+.memory-date {
+    margin-bottom: 16px;
+    position: relative;
+}
+
+/* Titik di garis timeline */
+.memory-date::before {
+    content: '';
+    position: absolute;
+    left: -46px;
+    /* Pas di atas garis vertikal */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background: var(--bg-dark);
+    border: 3px solid var(--sakura-pink);
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(244, 114, 182, 0.5);
+    z-index: 2;
+}
+
+.date-badge {
+    background: rgba(244, 114, 182, 0.15);
+    color: var(--sakura-pink);
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1px solid rgba(244, 114, 182, 0.3);
+}
+
+/* Kartu Foto */
+.memory-card {
+    padding: 16px;
+    border-radius: 24px;
+    background: rgba(22, 22, 30, 0.4);
+}
+
+/* Kontainer Foto */
+.memory-photo {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+/* Efek Hover di Foto */
+.memory-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+    object-fit: cover;
+}
+
+.memory-photo:hover img {
+    transform: scale(1.05);
+    /* Foto nge-zoom dikit kalau disorot */
+}
+
+/* Teks Caption */
+.memory-caption p {
+    color: var(--text-main);
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 8px 8px 8px;
+}
+
+/* Animasi Tombol Musik Saat Berjalan */
+.music-btn.playing {
+    opacity: 1;
+    animation: pulse-glow 1.5s infinite alternate;
+}
+
+@keyframes pulse-glow {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 2px var(--sakura-pink));
+    }
+
+    100% {
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 12px var(--sakura-pink));
+    }
+}
+
+/* --- Tombol See More di Profil --- */
+.see-more-btn {
+    margin-top: 24px;
+    width: 100%;
+    padding: 12px;
+    background: rgba(251, 146, 60, 0.1);
+    border: 1px solid rgba(251, 146, 60, 0.3);
+    color: var(--maple-warm);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+}
+
+.see-more-btn:hover {
+    background: rgba(251, 146, 60, 0.25);
+    box-shadow: 0 0 15px rgba(251, 146, 60, 0.2);
+    transform: translateY(-2px);
+}
+
+/* --- Pop-Up Modal Styling --- */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 200;
+    padding: 20px;
+}
+
+/* Modal Aktif */
+.modal-overlay.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-content {
+    max-width: 520px;
+    width: 100%;
+    background: rgba(20, 20, 28, 0.9);
+    border: 1px solid rgba(251, 146, 60, 0.2);
+    /* Aksen warna hangat */
+    border-radius: 28px;
+    padding: 36px;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+    transform: scale(0.9);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 28px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal-close:hover {
+    color: var(--text-main);
+}
+
+.modal-tag {
+    font-size: 11px;
+    color: var(--maple-warm);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 600;
+}
+
+.modal-header h3 {
+    font-size: 22px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    color: var(--text-main);
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--text-main);
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+.modal-body p {
+    opacity: 0.9;
+}
+
+.highlight-text {
+    color: var(--sakura-pink);
+    font-style: italic;
+    font-weight: 500;
+    border-left: 2px solid var(--sakura-pink);
+    padding-left: 12px;
+    margin-top: 8px;
+}
