@@ -868,3 +868,61 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+/* --- Arsip Folder Style --- */
+.archive-grid {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.archive-btn {
+    background: rgba(244, 114, 182, 0.15);
+    border: 1px solid rgba(244, 114, 182, 0.3);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.archive-btn:hover {
+    background: rgba(244, 114, 182, 0.35);
+    transform: translateY(-2px);
+}
+
+.back-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-muted, #a1a1aa);
+    cursor: pointer;
+    margin-bottom: 12px;
+    font-size: 13px;
+    display: inline-block;
+    padding: 4px 8px;
+}
+
+.back-btn:hover {
+    color: #fff;
+}
+
+.raw-text-box {
+    background: rgba(15, 15, 20, 0.7);
+    border: 1px dashed rgba(244, 114, 182, 0.3);
+    padding: 16px;
+    border-radius: 12px;
+    text-align: left;
+    white-space: pre-wrap;
+    /* Mempertahankan format ketikan asli */
+    font-size: 14px;
+    color: #e4e4e7;
+    line-height: 1.6;
+    max-height: 260px;
+    overflow-y: auto;
+}
