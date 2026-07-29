@@ -95,7 +95,7 @@ if (openBtn && modal) {
   openBtn.addEventListener("click", () => {
     // 1. Munculkan modal utama
     modal.classList.add("active");
-    
+
     // 2. Sembunyiin gembok (kalau ada) & Tampilkan isi rahasia
     if (lockScreen) lockScreen.style.display = "none";
     if (secretContent) secretContent.style.display = "block";
@@ -231,53 +231,53 @@ const diaryData = {
       10: "gw minta dia ceritain semua masa SMP, dan yap gw sakit hati ama ceritanya",
       12: "gw minta dia ceritain semua masa SMA, dan yap gw sakit hati ama ceritanya sakit banget banget, asli sakit banget, dan gk disangka2 jadi luka besar wkwk,",
       14: `[12/6, 22.00] arbans: kok orang lain pernah dapet perhatian kayak gitu, sedangkan gw malah harus pelan-pelan banget.
-          [12/6, 22.00] arbans: Kenapa orang yang gak tau diri bisa dapet kebaikan sebesar itu, sedangkan gw yang pacarnya malah masih berjuang ngerasa spesial?"
-          [12/6, 23.19] arbans: Kenapa orang-orang sebelum gw bisa dapet sisi-sisi Putri dengan gampang, sedangkan gw yang pacarnya masih pelan banget?"
-          [12/6, 23.19] arbans: Kenapa orang lain dulu bisa dapet perhatian dia dengan mudah, sedangkan gw yang sekarang jadi pacarnya malah masih berusaha keras buat ngerasa spesial?
-          [12/6, 23.19] arbans: kok orang lain pernah dapet perhatian kayak gitu, sedangkan gw malah harus pelan-pelan banget.
-          [12/6, 23.19] arbans: cuma pengen:
-          jadi orang yang paling dipercaya;
-          jadi orang yang dapet sisi dirinya yang gak orang lain dapet;
-          jadi orang yang dia pilih dengan sadar, bukan karena kasihan atau kebiasaan;
-          ngerasa "gw spesial buat dia".
-          [12/6, 23.19] arbans: apa gw bisa nerima dia yg sebenarnya/diri asliny
-          [12/6, 23.20] arbans: dan memaklumi masa lalunya, kaya gw ke diri sendiri
-          [12/6, 23.30] arbans: gw cuma pengen jadi orang yang paling dipercaya, paling spesial, dan dapet sisi dirinya yang gak semua orang dapet, dan gw juga lagi belajar menerima dia yang sebenarnya, serta memaklumi masa lalunya seperti aku memaklumi diriku sendiri
-          [14/6, 07.46] arbans: kepengen...
-          jadi orang yang paling spesial buat dia
-            Bukan sekadar "pacar"
-            Tapi:
-            orang yang paling dipercaya;
-            orang yang paling dikenal;
-            orang yang dapet sisi dirinya yang gak semua orang dapet;
-            orang yang dipilih dengan sadar.
-            gak iri sama cwo yg pernah dketin dia 
-            iri sama kenyataan bahwa:
-            "Kenapa orang lain dulu bisa dapet perhatian segampang dan kebaikan sebesar itu?"
-            kenapa ama pacar sendiri dia pelan pelan bgtt, tapi ama org lain gampang bgt`,
+      [12/6, 22.00] arbans: Kenapa orang yang gak tau diri bisa dapet kebaikan sebesar itu, sedangkan gw yang pacarnya malah masih berjuang ngerasa spesial?"
+      [12/6, 23.19] arbans: Kenapa orang-orang sebelum gw bisa dapet sisi-sisi Putri dengan gampang, sedangkan gw yang pacarnya masih pelan banget?"
+      [12/6, 23.19] arbans: Kenapa orang lain dulu bisa dapet perhatian dia dengan mudah, sedangkan gw yang sekarang jadi pacarnya malah masih berusaha keras buat ngerasa spesial?
+      [12/6, 23.19] arbans: kok orang lain pernah dapet perhatian kayak gitu, sedangkan gw malah harus pelan-pelan banget.
+      [12/6, 23.19] arbans: cuma pengen:
+      jadi orang yang paling dipercaya;
+      jadi orang yang dapet sisi dirinya yang gak orang lain dapet;
+      jadi orang yang dia pilih dengan sadar, bukan karena kasihan atau kebiasaan;
+      ngerasa "gw spesial buat dia".
+      [12/6, 23.19] arbans: apa gw bisa nerima dia yg sebenarnya/diri asliny
+      [12/6, 23.20] arbans: dan memaklumi masa lalunya, kaya gw ke diri sendiri
+      [12/6, 23.30] arbans: gw cuma pengen jadi orang yang paling dipercaya, paling spesial, dan dapet sisi dirinya yang gak semua orang dapet, dan gw juga lagi belajar menerima dia yang sebenarnya, serta memaklumi masa lalunya seperti aku memaklumi diriku sendiri
+      [14/6, 07.46] arbans: kepengen...
+      jadi orang yang paling spesial buat dia
+      Bukan sekadar "pacar"
+      Tapi:
+      orang yang paling dipercaya;
+      orang yang paling dikenal;
+      orang yang dapet sisi dirinya yang gak semua orang dapet;
+      orang yang dipilih dengan sadar.
+      gak iri sama cwo yg pernah dketin dia 
+      iri sama kenyataan bahwa:
+      "Kenapa orang lain dulu bisa dapet perhatian segampang dan kebaikan sebesar itu?"
+      kenapa ama pacar sendiri dia pelan pelan bgtt, tapi ama org lain gampang bgt`,
       17: `[17/6, 20.51] arbans: sayanggku, aku msih berjuang nerima masa lalu kamu, jdi tolong bgt jan marah klo ak masih kepikiran, ya aku tau aku yg minta ceritain semuany
-          trus aku btuh diyakinin klo kmu emg memilih aku, dan kmu gk akan kembali seperti dlu, bukan karena ak gk percaya sm kmu, tpi krn aku masih punya rasa takut untuk itu
-          ak gk minta kmu ngpus masa lalu kamu karna aku tau itu gk mungkin
-          [17/6, 20.51] arbans: 1 hal lgi yg aku pgnn, jangan cm nyuruh buat lupain semuany, ak pgn ditemenin sm kmu buat nerima semuany, aku capek klo sendiri
-          dan aku butuh pengertian dan kesabaran kmu, krn buat ak nerima semuany itu gk bisa langsung sekali jdi`,
+      trus aku btuh diyakinin klo kmu emg memilih aku, dan kmu gk akan kembali seperti dlu, bukan karena ak gk percaya sm kmu, tpi krn aku masih punya rasa takut untuk itu
+      ak gk minta kmu ngpus masa lalu kamu karna aku tau itu gk mungkin
+      [17/6, 20.51] arbans: 1 hal lgi yg aku pgnn, jangan cm nyuruh buat lupain semuany, ak pgn ditemenin sm kmu buat nerima semuany, aku capek klo sendiri
+      dan aku butuh pengertian dan kesabaran kmu, krn buat ak nerima semuany itu gk bisa langsung sekali jdi`,
       24: "Seneng banget, akhirny gw punya foto foto dia di hp gw dan resmi hehehe dan teleponan pertama kali",
       28: `[28/6, 23.33] arbans: [28/6, 22.57] arbans: Aku capek, sayang.
-            Aku pengen jujur sama apa yang aku rasain. Sampai sekarang aku belum sepenuhnya bisa nerima masa lalu kamu. Yang paling bikin aku susah itu bukan karena kamu punya masa lalu, tapi karena aku masih sering keinget gimana dulu kamu deket dan friendly sama beberapa cowok saat kita sama-sama udah saling suka.
-            aku sendiri waktu itu berusaha jaga batasan. Aku gak mau deket sama cewek lain karena perasaanku cuma ke kamu. Makanya waktu aku tahu hal-hal itu, rasanya masih sakit sampai sekarang.
-            aku juga baru sadar, yang bikin aku tambah kepikiran adalah dulu kamu gak pernah cerita soal cowok-cowok itu ke aku waktu kita masih PDKT. Jadi sekarang, setiap kita lagi bahagia, kadang tiba-tiba ingatan itu muncul lagi dan bikin aku susah percaya sepenuhnya.
-            aku bukan ngomong ini buat nyalahin kamu atau ngungkit terus. Aku cuma pengen kamu ngerti kenapa kadang aku masih overthinking dan kenapa aku kelihatan susah percaya. Aku capek sama pikiranku sendiri, dan aku juga capek terus kebawa sama kejadian yang udah lewat.
-            aku harap kamu bisa ngerti apa yang aku rasain
-            [28/6, 22.58] arbans: aku bener bener capekkk, rasany aku lebih suka diri aku yg lama saat gk deketin siapa² karna tenang
-            [28/6, 23.00] arbans: akuuu gtau lgii, apalgiii klo misalny nanti kita sama saling cek hp(ig,wa,tiktok,fb) mungkin ada sesuatu yg bikin aku sakit lgi
-            [28/6, 23.00] arbans: aku butuh waktu sendiri lgi aku dh capek dah mls dah gk tau mau ntah lah
-            [29/6, 10.01] arbans: yaaa, aku gk masalah kalo ngobrol bercanda doang, tapi kmu blg "....atau dkt..."  hm, oh kalo kek gitu berarti aku blh deket ama cewe² temen aku dong?
-            menurut aku klo "dkt" bisa bikin salah paham cowo², jadiny tuh mereka ngerasa kamu kasih peluang/harapan ke mereka.
-            contohny aja tuh si chelo, dia masih berani kan deketin kamu sampe waktu itu(bakar²) padahal dia dah tau kamu pacarny aku
-            coba bedain deket sama cowo dengan temenan ama cowo
-            aku tau pemikiran cowo² kek gmn
-            [29/6, 10.04] arbans: aku merasa aku sudah menjaga hubungan ini sejak sebelum kita pacaran, tapi dari sudut pandangku kamu belum menjaga dengan cara yang sama dan sampai sekarang aku masih kesulitan berdamai dengan perbedaan itu
-            aku kehilangan rasa percaya, rasa aman, dan dipikir pikir saat kita PDKT, usaha kita dari awal gk seimbang jg, dan aku takut kamu gk berubah, dan kejadian yg kyk di SMA kmu terulang lgi
-            1 lgi kehadiran kamu masih bikin aku bahagia`,
+      Aku pengen jujur sama apa yang aku rasain. Sampai sekarang aku belum sepenuhnya bisa nerima masa lalu kamu. Yang paling bikin aku susah itu bukan karena kamu punya masa lalu, tapi karena aku masih sering keinget gimana dulu kamu deket dan friendly sama beberapa cowok saat kita sama-sama udah saling suka.
+      aku sendiri waktu itu berusaha jaga batasan. Aku gak mau deket sama cewek lain karena perasaanku cuma ke kamu. Makanya waktu aku tahu hal-hal itu, rasanya masih sakit sampai sekarang.
+      aku juga baru sadar, yang bikin aku tambah kepikiran adalah dulu kamu gak pernah cerita soal cowok-cowok itu ke aku waktu kita masih PDKT. Jadi sekarang, setiap kita lagi bahagia, kadang tiba-tiba ingatan itu muncul lagi dan bikin aku susah percaya sepenuhnya.
+      aku bukan ngomong ini buat nyalahin kamu atau ngungkit terus. Aku cuma pengen kamu ngerti kenapa kadang aku masih overthinking dan kenapa aku kelihatan susah percaya. Aku capek sama pikiranku sendiri, dan aku juga capek terus kebawa sama kejadian yang udah lewat.
+      aku harap kamu bisa ngerti apa yang aku rasain
+      [28/6, 22.58] arbans: aku bener bener capekkk, rasany aku lebih suka diri aku yg lama saat gk deketin siapa² karna tenang
+      [28/6, 23.00] arbans: akuuu gtau lgii, apalgiii klo misalny nanti kita sama saling cek hp(ig,wa,tiktok,fb) mungkin ada sesuatu yg bikin aku sakit lgi
+      [28/6, 23.00] arbans: aku butuh waktu sendiri lgi aku dh capek dah mls dah gk tau mau ntah lah
+      [29/6, 10.01] arbans: yaaa, aku gk masalah kalo ngobrol bercanda doang, tapi kmu blg "....atau dkt..."  hm, oh kalo kek gitu berarti aku blh deket ama cewe² temen aku dong?
+      menurut aku klo "dkt" bisa bikin salah paham cowo², jadiny tuh mereka ngerasa kamu kasih peluang/harapan ke mereka.
+      contohny aja tuh si chelo, dia masih berani kan deketin kamu sampe waktu itu(bakar²) padahal dia dah tau kamu pacarny aku
+      coba bedain deket sama cowo dengan temenan ama cowo
+      aku tau pemikiran cowo² kek gmn
+      [29/6, 10.04] arbans: aku merasa aku sudah menjaga hubungan ini sejak sebelum kita pacaran, tapi dari sudut pandangku kamu belum menjaga dengan cara yang sama dan sampai sekarang aku masih kesulitan berdamai dengan perbedaan itu
+      aku kehilangan rasa percaya, rasa aman, dan dipikir pikir saat kita PDKT, usaha kita dari awal gk seimbang jg, dan aku takut kamu gk berubah, dan kejadian yg kyk di SMA kmu terulang lgi
+      1 lgi kehadiran kamu masih bikin aku bahagia`,
     },
     7: {
       3: `-Bulan ini banyak mimpi buruk dan Sering nangis
@@ -376,6 +376,9 @@ const diaryData = {
       luka gw kebuka lagi, kegores lagi, keinget lagi`,
       29: `-Bulan ini banyak mimpi buruk dan Sering nangis
       luka gw kebuka lagi, kegores lagi, keinget lagi`,
+      30: `-Bulan ini banyak mimpi buruk dan Sering nangis
+      luka gw kebuka lagi, kegores lagi, keinget lagi`,
+      31: `-`,
     },
   },
 };
