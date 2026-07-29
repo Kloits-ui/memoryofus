@@ -83,66 +83,110 @@ if (musicBtn && bgMusic) {
   });
 }
 
-// 4. Logika Modal Ridho (Lock Passcode)
+// 4. Logika Modal Ridho (TANPA PASSCODE / BUKA LANGSUNG)
 const modal = document.getElementById("ridho-modal");
 const openBtn = document.getElementById("open-ridho-modal");
 const closeBtn = document.getElementById("close-ridho-modal");
 
 const lockScreen = document.getElementById("modal-lock-screen");
 const secretContent = document.getElementById("modal-secret-content");
-const passInput = document.getElementById("passcode-input");
-const unlockBtn = document.getElementById("passcode-btn");
-const errorMsg = document.getElementById("passcode-error");
 
-const SECRET_PASSCODE = "3-26118";
+if (openBtn && modal) {
+  openBtn.addEventListener("click", () => {
+    // 1. Munculkan modal utama
+    modal.classList.add("active");
+    
+    // 2. Sembunyiin gembok (kalau ada) & Tampilkan isi rahasia
+    if (lockScreen) lockScreen.style.display = "none";
+    if (secretContent) secretContent.style.display = "block";
 
-function resetModalState() {
-  if (lockScreen && secretContent && passInput && errorMsg) {
-    lockScreen.style.display = "block";
-    secretContent.style.display = "none";
-    passInput.value = "";
-    errorMsg.textContent = "";
-  }
+    // 3. Reset tampilan ke daftar Tahun
+    const vYears = document.getElementById("view-years");
+    const vMonths = document.getElementById("view-months");
+    const vDays = document.getElementById("view-days");
+    const vContent = document.getElementById("view-content");
+
+    if (vYears) vYears.style.display = "block";
+    if (vMonths) vMonths.style.display = "none";
+    if (vDays) vDays.style.display = "none";
+    if (vContent) vContent.style.display = "none";
+  });
 }
 
-if (openBtn && modal && closeBtn) {
-  openBtn.addEventListener("click", () => {
-    resetModalState();
-    modal.classList.add("active");
-  });
-
+if (closeBtn && modal) {
   closeBtn.addEventListener("click", () => {
     modal.classList.remove("active");
   });
+}
 
+if (modal) {
   modal.addEventListener("click", (e) => {
     if (e.target === modal) {
       modal.classList.remove("active");
     }
   });
-
-  function checkPasscode() {
-    if (passInput && passInput.value === SECRET_PASSCODE) {
-      lockScreen.style.display = "none";
-      secretContent.style.display = "block";
-      errorMsg.textContent = "";
-    } else if (errorMsg && passInput) {
-      errorMsg.textContent = "Sandi salah, coba lagi ya! 🔒";
-      passInput.value = "";
-      passInput.focus();
-    }
-  }
-
-  if (unlockBtn) unlockBtn.addEventListener("click", checkPasscode);
-
-  if (passInput) {
-    passInput.addEventListener("keypress", (e) => {
-      if (e.key === "Enter") {
-        checkPasscode();
-      }
-    });
-  }
 }
+
+// // 4. Logika Modal Ridho (Lock Passcode)
+// const modal = document.getElementById("ridho-modal");
+// const openBtn = document.getElementById("open-ridho-modal");
+// const closeBtn = document.getElementById("close-ridho-modal");
+
+// const lockScreen = document.getElementById("modal-lock-screen");
+// const secretContent = document.getElementById("modal-secret-content");
+// const passInput = document.getElementById("passcode-input");
+// const unlockBtn = document.getElementById("passcode-btn");
+// const errorMsg = document.getElementById("passcode-error");
+
+// const SECRET_PASSCODE = "3-26118";
+
+// function resetModalState() {
+//   if (lockScreen && secretContent && passInput && errorMsg) {
+//     lockScreen.style.display = "block";
+//     secretContent.style.display = "none";
+//     passInput.value = "";
+//     errorMsg.textContent = "";
+//   }
+// }
+
+// if (openBtn && modal && closeBtn) {
+//   openBtn.addEventListener("click", () => {
+//     resetModalState();
+//     modal.classList.add("active");
+//   });
+
+//   closeBtn.addEventListener("click", () => {
+//     modal.classList.remove("active");
+//   });
+
+//   modal.addEventListener("click", (e) => {
+//     if (e.target === modal) {
+//       modal.classList.remove("active");
+//     }
+//   });
+
+//   function checkPasscode() {
+//     if (passInput && passInput.value === SECRET_PASSCODE) {
+//       lockScreen.style.display = "none";
+//       secretContent.style.display = "block";
+//       errorMsg.textContent = "";
+//     } else if (errorMsg && passInput) {
+//       errorMsg.textContent = "Sandi salah, coba lagi ya! 🔒";
+//       passInput.value = "";
+//       passInput.focus();
+//     }
+//   }
+
+//   if (unlockBtn) unlockBtn.addEventListener("click", checkPasscode);
+
+//   if (passInput) {
+//     passInput.addEventListener("keypress", (e) => {
+//       if (e.key === "Enter") {
+//         checkPasscode();
+//       }
+//     });
+//   }
+// }
 
 // Data Isi Hati Mentah
 const diaryData = {
@@ -258,7 +302,7 @@ const diaryData = {
       terimakasih yaa buat semua kenangan yg udh kita lewatin.
       kalau suatu saat nanti kamu masih mau temenan sama aku, aku gapapa. tapi kalau kamu gk mau juga, aku bakal ngerti dan aku hargai keputusan kamu.
       sekali lagi, makasih yaa, dan maaf. TAPI INI GK JADI YAA EYY`,
-      4: `-Bulan ini banyak mimpi buruk dan Sering nangis
+      10: `-Bulan ini banyak mimpi buruk dan Sering nangis
       [10/7, 12.51] arbans: aku pengen jujur sama kmu soal 1 hal yg paling berat buat aku, sebenarnya yang paling bikin aku capek bukan krn aku gk peduli lgi sama kmu atau udh gk sayang sama kmu, yang paling berat itu bangun kepercayaan aku ke kamu
       jujur ya, mungkin ini terdengar lebay, tapi kepercayaan aku udh bener² hancur,  aku udh berusaha buat ngebangun lgi, aku juga berkali² nyoba buat percaya lgi sma kamu
       tapi setiap kali aku ngebangun kepercayaan itu, hal² yg nyakitin aku selalu muncul lgi dipikiran, aku dh berusaha lawan pikiran itu tpi rasany gk bisa, dn kepercayaan aku selalu hancur lagi
