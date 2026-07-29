@@ -94,7 +94,7 @@ const passInput = document.getElementById("passcode-input");
 const unlockBtn = document.getElementById("passcode-btn");
 const errorMsg = document.getElementById("passcode-error");
 
-const SECRET_PASSCODE = "3-26119";
+const SECRET_PASSCODE = "3-26118";
 
 function resetModalState() {
   if (lockScreen && secretContent && passInput && errorMsg) {
