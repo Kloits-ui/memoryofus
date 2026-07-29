@@ -20,7 +20,7 @@ function updateGreeting() {
   const minutes = now.getMinutes().toString().padStart(2, "0");
   const timeString = `${hour}:${minutes}`;
 
-  greetingElement.innerHTML = `${greetingText} <br> <span style="font-size:12px; color: #A1A1AA; font-weight: normal;">Sekarang pukul ${timeString}</span>`;
+  greetingElement.innerHTML = `${greetingText} <br> <span style="font-size:12px; color: #A1A1AA; font-weight: normal;">${timeString}</span>`;
 }
 
 // Jalankan fungsi saat web dibuka, dan update tiap 1 menit
@@ -110,3 +110,35 @@ if (openBtn && modal && closeBtn) {
     }
   });
 }
+
+// --- Fitur Hitung Hari Bersama ---
+// 📅 GANTI TANGGAL JADIAN / HARI PENTING DI SINI (Format: YYYY-MM-DD)
+const START_DATE = new Date("2026-04-20T00:00:00"); 
+
+function updateCounter() {
+  const now = new Date();
+  const diff = now - START_DATE; // Selisih waktu
+
+  if (diff < 0) return; // Jika tanggal di masa depan
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / (1000 * 60)) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
+
+  const daysEl = document.getElementById('days');
+  const hoursEl = document.getElementById('hours');
+  const minutesEl = document.getElementById('minutes');
+  const secondsEl = document.getElementById('seconds');
+
+  if (daysEl && hoursEl && minutesEl && secondsEl) {
+    daysEl.textContent = days;
+    hoursEl.textContent = String(hours).padStart(2, '0');
+    minutesEl.textContent = String(minutes).padStart(2, '0');
+    secondsEl.textContent = String(seconds).padStart(2, '0');
+  }
+}
+
+// Update tiap 1 detik
+setInterval(updateCounter, 1000);
+updateCounter();
