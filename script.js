@@ -455,3 +455,48 @@ function backToDays() {
   document.getElementById("view-content").style.display = "none";
   document.getElementById("view-days").style.display = "block";
 }
+
+// Ganti ini sama tanggal jadian lu (Format: YYYY-MM-DD)
+const startDate = new Date('2025-04-20'); // Contoh: 15 November 2025
+const today = new Date();
+
+// Ngitung udah berapa bulan bareng-bareng
+let monthsTogether = (today.getFullYear() - startDate.getFullYear()) * 12 + (today.getMonth() - startDate.getMonth());
+
+// Nyesuaiin kalau belum lewat tanggal jadian di bulan ini
+if (today.getDate() < startDate.getDate()) {
+    monthsTogether--; 
+}
+
+// LOGIKA TRIGGER PERAYAAN:
+// Cek kalau tanggal hari ini SAMA dengan tanggal jadian (dan minimal udah 1 bulan)
+if (today.getDate() === startDate.getDate() && monthsTogether > 0) {
+  // Cek apakah pas kelipatan 12 bulan (Anniversary Tahunan)
+  if (monthsTogether % 12 === 0) {
+    let years = monthsTogether / 12;
+    let labelTahun = years > 1 ? `${years} Years` : "1 Year"; // 1 Year vs 2 Years
+
+    tampilkanPerayaan(
+      `Happy ${labelTahun} Anniversary! 🎉`,
+      `Gak kerasa udah ${years} tahun kita bareng-bareng. Makasih ya udah ada terus di hidup aku... 🤍`,
+    );
+  } else {
+    // Perayaan Bulanan Biasa
+    tampilkanPerayaan(
+      `Happy ${monthsTogether} Months! 💖`,
+      `Cieee nambah bulan ke-${monthsTogether} nih kita. Tetep bareng-bareng terus ya!`,
+    );
+  }
+}
+
+// Fungsi buat nampilin Pop-up/Alert perayaan
+function tampilkanPerayaan(judul, pesan) {
+    // Lu bisa ganti ini pakai Modal/Pop-up HTML buatan lu biar lebih estetik
+    // Sementara gw pake alert biasa buat ngetes logikanya jalan atau nggak
+    console.log(judul + " - " + pesan);
+    
+    // Nanti kita kaitkan ke elemen HTML modal di sini
+    document.getElementById("anniv-title").innerText = judul;
+    document.getElementById("anniv-msg").innerText = pesan;
+    document.getElementById("anniv-modal").style.display = "block";
+}
