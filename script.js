@@ -378,13 +378,18 @@ const diaryData = {
       luka gw kebuka lagi, kegores lagi, keinget lagi`,
       30: `-Bulan ini banyak mimpi buruk dan Sering nangis
       luka gw kebuka lagi, kegores lagi, keinget lagi`,
-      31: `Bulan Juli ini adalah bulan dimana gw menunjukan sisi lemah gw yang sering nangis, dan pada bulan ini juga gw udh terluka, nyesek, kecewa, kesal, menyesal berkali kali atas apa yang sudah terjadi huft...
+      31: `     Bulan Juli ini adalah bulan dimana gw menunjukan sisi lemah gw yang sering nangis, dan pada bulan ini juga gw udh terluka, nyesek, kecewa, kesal, menyesal berkali kali atas apa yang sudah terjadi huft...
       luka itu makin terasa menyakitkan dan menjadi lebih berat...`,
     },
-    8:{
-      1:`Awal bulan yang baik karena bisa lebih dekat dengan putri pada saat jalan bersamanya terasa menyenangkan....
-      tapi di sisi lain ingatan itu muncul lagi dan menyakiti lagi..... hm`,
-    }
+    8: {
+      1: `     Awal bulan yang baik karena bisa lebih dekat dengan putri pada saat jalan bersamanya terasa menyenangkan....
+      Tapi di sisi lain ingatan itu muncul lagi dan menyakiti lagi..... hm`,
+      2: `     Semakin berat bagi gw, semakin sakit hati gw, semakin kecewa gw, dengan apa yang udh terjadi, ditambah lagi itu adalah kejadian yang tidak bisa diubah
+      Dalam hubungan ini, gw semakin takut dan overthinking akan masa depan yang belum pasti karena takut kejadian itu terulang lagi, gw gk tau apakah gw bisa percaya dia lagi atau tidak, tapi yang pasti hari ini gw belum bisa percaya
+      Setiap hari gw selalu teringat tentang hal itu dan gw terlalu berkorban untuk hubungan yang tidak pasti saat itu, dan pada akhirnya gw yang terluka, overthinking, sedih, kecewa, hilangnya rasa tenang aman dan hilangnya rasa percaya dalam hubungan ini...
+      Gw bener bener lelah menghadapi luka tersebut, rasanya gw udh sampai di titik batas gw sendiri`,
+      3:``,
+    },
   },
 };
 
