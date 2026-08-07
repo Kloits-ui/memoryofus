@@ -388,7 +388,19 @@ const diaryData = {
       Dalam hubungan ini, gw semakin takut dan overthinking akan masa depan yang belum pasti karena takut kejadian itu terulang lagi, gw gk tau apakah gw bisa percaya dia lagi atau tidak, tapi yang pasti hari ini gw belum bisa percaya
       Setiap hari gw selalu teringat tentang hal itu dan gw terlalu berkorban untuk hubungan yang tidak pasti saat itu, dan pada akhirnya gw yang terluka, overthinking, sedih, kecewa, hilangnya rasa tenang aman dan hilangnya rasa percaya dalam hubungan ini...
       Gw bener bener lelah menghadapi luka tersebut, rasanya gw udh sampai di titik batas gw sendiri`,
-      3:``,
+      3: `Senang->Teringat->Kembali TERLUKA
+      Luka ini benar benar tambah besar yaa, tambah menyakitkan setiap hariny`,
+      4: `Senang->Teringat->Kembali TERLUKA
+      Luka ini benar benar tambah besar yaa, tambah menyakitkan setiap hariny`,
+      5: `Senang->Teringat->Kembali TERLUKA
+      Luka ini benar benar tambah besar yaa, tambah menyakitkan setiap hariny`,
+      6: `Senang->Teringat->Kembali TERLUKA
+      Luka ini benar benar tambah besar yaa, tambah menyakitkan setiap hariny`,
+      7: `Senang->Teringat->Kembali TERLUKA
+      Luka ini benar benar tambah besar yaa, tambah menyakitkan setiap hariny
+      Malam ini gw makin sadar , apapun yg dilakuin putri sekarang , gk bkl ngobatin luka gw, dan makin berjalannya hari gw semakin ovt dan selalu keinget
+      jadi apapun yg dilakukan putri saat ini bikin gw bahagia sebentar lalu kembali terluka setelahnya dan..
+      maafnya putri sekarang rasanya udh gk berarti apa2 dan gk bisa nguba apa2, prove it dan real yg sekarang gw alamin`,
     },
   },
 };
