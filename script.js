@@ -474,7 +474,7 @@ function backToDays() {
 }
 
 // Ganti ini sama tanggal jadian lu (Format: YYYY-MM-DD)
-const startDate = new Date('2025-04-20'); // Contoh: 15 November 2025
+const startDate = new Date('2026-04-20'); // Contoh: 15 November 2025
 const today = new Date();
 
 // Ngitung udah berapa bulan bareng-bareng
