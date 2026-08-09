@@ -401,6 +401,17 @@ const diaryData = {
       Malam ini gw makin sadar , apapun yg dilakuin putri sekarang , gk bkl ngobatin luka gw, dan makin berjalannya hari gw semakin ovt dan selalu keinget
       jadi apapun yg dilakukan putri saat ini bikin gw bahagia sebentar lalu kembali terluka setelahnya dan..
       maafnya putri sekarang rasanya udh gk berarti apa2 dan gk bisa nguba apa2, prove it dan real yg sekarang gw alamin`,
+      8: `yap hari yg sama, lukany//a makin berasa, makin kepikiran wkwk`,
+      9: `hm hari yang sama entah sampai kapan luka ini ada, gk bkl bisa sembuh, ntahlah, gw jg udh capek wkwk jalanin hubungan dengan pikirin seperti ini terus2an, emang gk adil sih di posisi gw
+      ya seenggakny 2 hari kemarin gw ngopi hehe, tapi serius dah wkwk kepala gw sakit bener kalo dah bnr capek ovt kek, dan setiap gw inget rasa sakit di hati gw kek ditusuk, agak lebay sih tapi emang kek gitu
+      3 hari kemarin juga gw tidurny berantakan gajelas jg, wkwk tapi bangun pagi terus, yaa udh gk yakin sih ama kesehatan gw, tpi bodoamatlah, kek bagus dah, lagipula gw jg lagi gk ada tujuan hidup hehe, gara2 all in ke hubungan ini dari awal`,
+      10: `maaf ya buat tmn SMP gw, gw sering gk dateng ke acara kumpul2, begitu juga dengan tmn SMK gw, dan kalo gw bisa minta maaf secara gk langsung, gw gk enak banget cuekin tmn kelas terutama yg cewe hanya krn 1 orang yg gw kejar tapi malah jadi begini akhirnya
+      setiap kalian ngomong dengan gw, gw ngerasa kalian emang canggung jg wkwk, dan pasti jg kadang sungkan kalo mau minta tolong ke gw dan akhirnya minta tolong ke lain wkwk, maaf lah pokoknya, trus maaf jg atas tatapan gk enak atau sinis dari gw ke kalian ya
+      
+      huft, gw minta maaf ke diri gw sendiri sampai 9 Agust 2026 ini karena belum bisa apa2 dan yaa memang memalukan bagi Ridho Arban Syah yang di kenal banyak orang sebagai orang yg akan sukses nantinya wkwk
+      dan To a younger Ridho, minta maaf ya kamu memang memegang banyak harapan dan ekspetasi tentang hubungan ini sejak Kelas 8, yaa Maaf banget yaa karena gk sesuai harapan pada akhirnya menjadi yang terluka dan menanggung beban luka ini sendirian
+      sumpah maaf banget yaa Ridho hubungan versi di otakmu jauh lebih indah dari ini kok, dan jadi kamu selama bertahun2 harus hidup di pikiran sendiri karena apa yang di harapkan dan di ekspetasikan gk semuanya berjalan dan terjadi
+      dan ridho kamu mengorbankan kehidupan sosial kamu demi 1 perempuan yang kamu kejar dari dulu dan akhirny kamu sendiri yang tersakiti, apa yang lu lakuin dan lu korbanin dlu saat sekolah semuany jadi sia sia, SORRY BANGET`,
     },
   },
 };
@@ -474,15 +485,17 @@ function backToDays() {
 }
 
 // Ganti ini sama tanggal jadian lu (Format: YYYY-MM-DD)
-const startDate = new Date('2026-04-20'); // Contoh: 15 November 2025
+const startDate = new Date("2026-04-20"); // Contoh: 15 November 2025
 const today = new Date();
 
 // Ngitung udah berapa bulan bareng-bareng
-let monthsTogether = (today.getFullYear() - startDate.getFullYear()) * 12 + (today.getMonth() - startDate.getMonth());
+let monthsTogether =
+  (today.getFullYear() - startDate.getFullYear()) * 12 +
+  (today.getMonth() - startDate.getMonth());
 
 // Nyesuaiin kalau belum lewat tanggal jadian di bulan ini
 if (today.getDate() < startDate.getDate()) {
-    monthsTogether--; 
+  monthsTogether--;
 }
 
 // LOGIKA TRIGGER PERAYAAN:
@@ -508,12 +521,12 @@ if (today.getDate() === startDate.getDate() && monthsTogether > 0) {
 
 // Fungsi buat nampilin Pop-up/Alert perayaan
 function tampilkanPerayaan(judul, pesan) {
-    // Lu bisa ganti ini pakai Modal/Pop-up HTML buatan lu biar lebih estetik
-    // Sementara gw pake alert biasa buat ngetes logikanya jalan atau nggak
-    console.log(judul + " - " + pesan);
-    
-    // Nanti kita kaitkan ke elemen HTML modal di sini
-    document.getElementById("anniv-title").innerText = judul;
-    document.getElementById("anniv-msg").innerText = pesan;
-    document.getElementById("anniv-modal").style.display = "block";
+  // Lu bisa ganti ini pakai Modal/Pop-up HTML buatan lu biar lebih estetik
+  // Sementara gw pake alert biasa buat ngetes logikanya jalan atau nggak
+  console.log(judul + " - " + pesan);
+
+  // Nanti kita kaitkan ke elemen HTML modal di sini
+  document.getElementById("anniv-title").innerText = judul;
+  document.getElementById("anniv-msg").innerText = pesan;
+  document.getElementById("anniv-modal").style.display = "block";
 }
