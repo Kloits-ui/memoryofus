@@ -221,9 +221,11 @@ const diaryData = {
       dan To a younger Ridho, minta maaf ya kamu memang memegang banyak harapan dan ekspetasi tentang hubungan ini sejak Kelas 8, yaa Maaf banget yaa karena gk sesuai harapan pada akhirnya menjadi yang terluka dan menanggung beban luka ini sendirian
       sumpah maaf banget yaa Ridho hubungan versi di otakmu jauh lebih indah dari ini kok, dan jadi kamu selama bertahun2 harus hidup di pikiran sendiri karena apa yang di harapkan dan di ekspetasikan gk semuanya berjalan dan terjadi
       dan ridho kamu mengorbankan kehidupan sosial kamu demi 1 perempuan yang kamu kejar dari dulu dan akhirny kamu sendiri yang tersakiti, apa yang lu lakuin dan lu korbanin dlu saat sekolah semuany jadi sia sia, SORRY BANGET`,
-      11: `capek gini mulu ama keadaan, pen cpt tiada aja biar selesai istirahat, gpp dah gk mslh jg kalo gw tiada, capek dh serius gw mah
-    SEDIH SEDIH SEDIH SEDIH SEDIH, NANGIS, NANGIS, NANGIS, NANGIS, NANGIS, SENSI, SENSI, SENSI, SENSI, SENSI, KESEL, KESEL, KESEL, KESEL, KESEL, BENCI, BENCI, BENCI, BENCI, BENCI
-    OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT`,
+      11: `
+    SEDIH SEDIH SEDIH, NANGIS, NANGIS, NANGIS, NANGIS
+    SENSI, SENSI, SENSI, SENSI, KESEL, KESEL, KESEL, KESEL
+    BENCI, BENCI, BENCI, BENCI, BENCI, BENCI, BENCI, BENCI
+    OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT`,
     },
   },
 };
