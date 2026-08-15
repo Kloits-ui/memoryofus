@@ -226,6 +226,9 @@ const diaryData = {
     SENSI, SENSI, SENSI, SENSI, KESEL, KESEL, KESEL, KESEL
     BENCI, BENCI, BENCI, BENCI, BENCI, BENCI, BENCI, BENCI
     OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT`,
+      14: `gw pen putus karena udh gk sehat buat gw, gw gk tenang, gw gtau apa putri emg udh belajar buat lebih ngerti batasan , gk tau dia udh belajar buat berubah dan belajar buat ngelihat ke arah gw gitu, hm,
+       gw jg gk tenang kalo misalny dia reunian/acara SMA, kan temem cowony berengsek semua wk, hm anjing emang`,
+      15: 'gw sebenarnya gkmau putus, daripada putus mending gw cepet tiada hehe jadi beban gw ilang semua, lebay dah tapi bener sih',
     },
   },
 };
