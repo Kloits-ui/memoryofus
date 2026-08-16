@@ -228,7 +228,12 @@ const diaryData = {
     OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT`,
       14: `gw pen putus karena udh gk sehat buat gw, gw gk tenang, gw gtau apa putri emg udh belajar buat lebih ngerti batasan , gk tau dia udh belajar buat berubah dan belajar buat ngelihat ke arah gw gitu, hm,
        gw jg gk tenang kalo misalny dia reunian/acara SMA, kan temem cowony berengsek semua wk, hm anjing emang`,
-      15: 'gw sebenarnya gkmau putus, daripada putus mending gw cepet tiada hehe jadi beban gw ilang semua, lebay dah tapi bener sih',
+      15: "gw sebenarnya gkmau putus, daripada putus mending gw cepet tiada hehe jadi beban gw ilang semua, lebay dah tapi bener sih",
+      16: `[16/8, 19.44] <3girlfiee🤍: egk, ko kamu bisa sih keinget itu trus tiap hari lg, cm pen nanya itu doang sih [16/8, 19.44] <3girlfiee🤍: hm
+      point 1: kamu harus tau aku orang yang punya daya ingat yang bagus, kalau udah ngalamin sesuatu yang sangat ngaruh ke aku, apalagi sesuatu yang nyakitin, aku susah banget buat lupa, aku suka dengan pasangan yg punya batasan yang jelas seperti aku, aku orangny cemburuan karena aku tau aku gampang kalah ama cowo diluar sana.
+      point 2: aku gk bisa jelasin lagi, teringat jelas kenapa kamu ngelakuin itum aku sakit hati bgt
+      point 3:
+      `,
     },
   },
 };
