@@ -231,13 +231,41 @@ OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT`,
       16: `[16/8, 19.44] <3girlfiee🤍: egk, ko kamu bisa sih keinget itu trus tiap hari lg, cm pen nanya itu doang sih [16/8, 19.44] <3girlfiee🤍: hm
 point 1: aku gk perlu jelasin lagi, harusnya kamu dah tau mungkin simpelny karena itu masa lalu yang nyakitin aku, aku udh kehilangan banyak hal dan ternyata luka ini jadi masalah di hubungan kita hari ini, serta udh ngerembet kemana2
       `,
-      17:`tinggalin aku pls, kamu gk seharusnya bertahan, aku selalu tenggelam dalam masa lalu, aku orang yang selalu stuck di tempat ini, gk ada kemajuan.
+      17: `tinggalin aku pls, kamu gk seharusnya bertahan, aku selalu tenggelam dalam masa lalu, aku orang yang selalu stuck di tempat ini, gk ada kemajuan.
 aku ngeliat kamu masih bisa berkembang dan bisa bekerja, aku malu dan aku khwatir aku cuma jadi penghambat kamu, sedangkan aku masih di tempat yang sama, dengan pikiran yang sama, luka yang sama, dan selalu sedih atas semua yg udh terjadi.
 aku yang sekrang takut bangat di tinggal, beda dengan yang dulu yg gk peduli sama kemajuan orang lain, apa kata keluarga kamu kalo aku belum kerja.
 luka ini bener bener ganggu kehidupan aku, tapi aku juga gkmau terusterusan nyalahin kamu, tapi emg kamu salah satu penyebabnya hm
 hum,aku gtau lagi sampai kapan aku begini terus terusan, mungkin ada 1 hal emang yang terbaik buat kita masing2, maaf atas semuanya.`,
+      last: `hm, aku ingin pacaran sama kamu karena aku punya firasat kuat kita emang harusnya bersatu sampai tua, karena mau aku disukai atau mulai tertarik sama orang lain pasti kembalinya aku itu ke kamu
+
+yaa aku emang sengaja pacaran sama kamu di akhir masa sekolah, dan aku mau ngambil resiko besar untuk berniat sampai kita nikah (malu dah), awalnya aku harap semua akan berjalan lancar dan sesuai perhitungan aku, seharusnya aku bisa berkembang dan mengejar masa depan aku sambil membawa kamu bersama aku disetiap langkahku dan benar2 aku punya niatan untuk menikahi kamu (aku jujur walau aku malu bilangnya) karena aku sudah niatkan matang2
+
+tapi memang sudah seharusnya tidak ada yang berjalan mudah di dunia, aku masih tidak sangka, apa yang kamu perbuat di masa sekolah itu membuat aku terluka dan tidak bisa tenang/aman serta hilangnya rasa kepercayaan/rasa spesial posisi aku dalam hubungan ini....
+
+aku sudah berusaha untuk menghindari masalah yang akan muncul dalam hubungan ini: aku sudah tidak ada rasa/contact ama mantan, aku tidak main dengan cewe kelas, tidak dekat dengan cewe kelas, berusaha cuek ke cewe kelas, bahkan ketika ada acara kelas smp/smk aku lebih sering tidak ikut... dan ingin membuat kamu spesial di mata aku, keluarga aku, teman temanku
+
+aku dah berusaha semaksimal mungkin untuk membuat kamu merasa spesial dalam hubungan ini dan iya sesuai yang aku bilang: 
+1. kamu adalah peremepuan pertama yang membuat aku sesayang dan secinta ini
+2. kamu adalah peremepuan pertama yang aku bonceng saat aku berkendara
+3. kamu adalah perempuan pertama yang bisa luluhin hati/sikap aku yang dingin ini
+4. kamu adalah perempuan pertama yang aku ajak ngedate 
+5. kamu adalah perempuan pertama yang aku pamerkan/ceritakan ke teman temanku dengan bangga
+6. kamu adalah perempuan pertama yang berhasil memegang kedua tangan ku dengan erat
+7. kamu adalah perempuan pertama yang aku peluk 
+8. kamu adalah perempuan pertama yang berhasil ajak aku call/video call berjam-jam
+9. kamu adalah perempuan pertama yang aku ajak kerumah dan aku tidak malu memperkenalkan kamu ke keluarga aku
+10. kamu adalah perempuan pertama yang aku traktir
+11. kamu adalah perempuan pertama yang membuatku khawtir kehilangan sosok yang ku sayangi
+12. kamu adalah perempuan pertama yang ku beri bunga, coklat
+13. kamu adalah perempuan pertama yang bisa membuat kamu terbuka tentang banyak hal
+14. kamu adalah perempuan pertama yang membuatku belajar memahami seseorang sedalam ini
+15. kamu adalah perempuan pertama yang membuatku merasa punya seseorang yang selalu ku ingin ajak dalam setiap perjalanan hidup ku
+16. kamu adalah perempuan pertama yang membuatku merasakan takut kehilangan sekaligus takut terluka dalam waktu yang sama
+
+tapi ketika aku terluka karena kamu, yang ikut terasa hilang adalah semua makna yang selama ini aku kasih ke hubungan kita
+`,
     },
-  }, 
+  },
 };
 
 // Nama Bulan
@@ -330,7 +358,7 @@ function openMonth(month) {
         ? `<span class="badge-penting">❗️</span>`
         : "";
 
-    daysHtml += `<button class="archive-btn" onclick="openDay('${day}')">Tgl ${day} ${badge}</button>`;
+    daysHtml += `<button class="archive-btn" onclick="openDay('${day}')"> ${day} ${badge}</button>`;
   }
   document.getElementById("days-list").innerHTML = daysHtml;
 }
