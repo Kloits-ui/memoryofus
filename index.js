@@ -257,10 +257,11 @@ aku dah berusaha semaksimal mungkin untuk membuat kamu merasa spesial dalam hubu
 10. kamu adalah perempuan pertama yang aku traktir
 11. kamu adalah perempuan pertama yang membuatku khawtir kehilangan sosok yang ku sayangi
 12. kamu adalah perempuan pertama yang ku beri bunga, coklat
-13. kamu adalah perempuan pertama yang bisa membuat kamu terbuka tentang banyak hal
+13. kamu adalah perempuan pertama yang bisa membuat aku terbuka tentang banyak hal
 14. kamu adalah perempuan pertama yang membuatku belajar memahami seseorang sedalam ini
 15. kamu adalah perempuan pertama yang membuatku merasa punya seseorang yang selalu ku ingin ajak dalam setiap perjalanan hidup ku
 16. kamu adalah perempuan pertama yang membuatku merasakan takut kehilangan sekaligus takut terluka dalam waktu yang sama
+dan masih banyak lagi
 
 tapi ketika aku terluka karena kamu, yang ikut terasa hilang adalah semua makna yang selama ini aku kasih ke hubungan kita
 `,
