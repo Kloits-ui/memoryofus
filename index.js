@@ -221,21 +221,23 @@ const diaryData = {
       dan To a younger Ridho, minta maaf ya kamu memang memegang banyak harapan dan ekspetasi tentang hubungan ini sejak Kelas 8, yaa Maaf banget yaa karena gk sesuai harapan pada akhirnya menjadi yang terluka dan menanggung beban luka ini sendirian
       sumpah maaf banget yaa Ridho hubungan versi di otakmu jauh lebih indah dari ini kok, dan jadi kamu selama bertahun2 harus hidup di pikiran sendiri karena apa yang di harapkan dan di ekspetasikan gk semuanya berjalan dan terjadi
       dan ridho kamu mengorbankan kehidupan sosial kamu demi 1 perempuan yang kamu kejar dari dulu dan akhirny kamu sendiri yang tersakiti, apa yang lu lakuin dan lu korbanin dlu saat sekolah semuany jadi sia sia, SORRY BANGET`,
-      11: `
-    SEDIH SEDIH SEDIH, NANGIS, NANGIS, NANGIS, NANGIS
-    SENSI, SENSI, SENSI, SENSI, KESEL, KESEL, KESEL, KESEL
-    BENCI, BENCI, BENCI, BENCI, BENCI, BENCI, BENCI, BENCI
-    OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT`,
+      11: `SEDIH SEDIH SEDIH, NANGIS, NANGIS, NANGIS, NANGIS
+SENSI, SENSI, SENSI, SENSI, KESEL, KESEL, KESEL, KESEL
+BENCI, BENCI, BENCI, BENCI, BENCI, BENCI, BENCI, BENCI
+OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT OVT`,
       14: `gw pen putus karena udh gk sehat buat gw, gw gk tenang, gw gtau apa putri emg udh belajar buat lebih ngerti batasan , gk tau dia udh belajar buat berubah dan belajar buat ngelihat ke arah gw gitu, hm,
        gw jg gk tenang kalo misalny dia reunian/acara SMA, kan temem cowony berengsek semua wk, hm anjing emang`,
       15: "gw sebenarnya gkmau putus, daripada putus mending gw cepet tiada hehe jadi beban gw ilang semua, lebay dah tapi bener sih",
       16: `[16/8, 19.44] <3girlfiee🤍: egk, ko kamu bisa sih keinget itu trus tiap hari lg, cm pen nanya itu doang sih [16/8, 19.44] <3girlfiee🤍: hm
-      point 1: kamu harus tau aku orang yang punya daya ingat yang bagus, kalau udah ngalamin sesuatu yang sangat ngaruh ke aku, apalagi sesuatu yang nyakitin, aku susah banget buat lupa, aku suka dengan pasangan yg punya batasan yang jelas seperti aku, aku orangny cemburuan karena aku tau aku gampang kalah ama cowo diluar sana.
-      point 2: aku gk bisa jelasin lagi, teringat jelas kenapa kamu ngelakuin itum aku sakit hati bgt
-      point 3:
+point 1: aku gk perlu jelasin lagi, harusnya kamu dah tau mungkin simpelny karena itu masa lalu yang nyakitin aku, aku udh kehilangan banyak hal dan ternyata luka ini jadi masalah di hubungan kita hari ini, serta udh ngerembet kemana2
       `,
+      17:`tinggalin aku pls, kamu gk seharusnya bertahan, aku selalu tenggelam dalam masa lalu, aku orang yang selalu stuck di tempat ini, gk ada kemajuan.
+aku ngeliat kamu masih bisa berkembang dan bisa bekerja, aku malu dan aku khwatir aku cuma jadi penghambat kamu, sedangkan aku masih di tempat yang sama, dengan pikiran yang sama, luka yang sama, dan selalu sedih atas semua yg udh terjadi.
+aku yang sekrang takut bangat di tinggal, beda dengan yang dulu yg gk peduli sama kemajuan orang lain, apa kata keluarga kamu kalo aku belum kerja.
+luka ini bener bener ganggu kehidupan aku, tapi aku juga gkmau terusterusan nyalahin kamu, tapi emg kamu salah satu penyebabnya hm
+hum,aku gtau lagi sampai kapan aku begini terus terusan, mungkin ada 1 hal emang yang terbaik buat kita masing2, maaf atas semuanya.`,
     },
-  },
+  }, 
 };
 
 // Nama Bulan
@@ -263,10 +265,35 @@ function openYear(year) {
   document.getElementById("view-years").style.display = "none";
   document.getElementById("view-months").style.display = "block";
 
+  const today = new Date();
+  const currentYear = today.getFullYear();
+  const currentMonth = today.getMonth() + 1; // 8 untuk Agustus
+
+  const namaBulan = [
+    "Januari",
+    "Februari",
+    "Maret",
+    "April",
+    "Mei",
+    "Juni",
+    "Juli",
+    "Agustus",
+    "September",
+    "Oktober",
+    "November",
+    "Desember",
+  ];
+
   let monthsHtml = "";
-  for (let month in diaryData[year]) {
-    const name = monthNames[month] || `Bulan ${month}`;
-    monthsHtml += `<button class="archive-btn" onclick="openMonth('${month}')">${name}</button>`;
+  for (let month in diaryData[selectedYear]) {
+    const monthNum = Number(month);
+
+    // Cek apakah bulan ini adalah bulan sekarang (atau bulan yang punya tanggal penting)
+    const isBulanIni =
+      Number(selectedYear) === currentYear && monthNum === currentMonth;
+    const badge = isBulanIni ? `<span class="badge-penting">❗️</span>` : "";
+
+    monthsHtml += `<button class="archive-btn" onclick="openMonth('${month}')">${namaBulan[monthNum - 1]} ${badge}</button>`;
   }
   document.getElementById("months-list").innerHTML = monthsHtml;
 }
@@ -276,13 +303,37 @@ function openMonth(month) {
   document.getElementById("view-months").style.display = "none";
   document.getElementById("view-days").style.display = "block";
 
+  // 1. Ambil tanggal hari ini secara otomatis dari sistem
+  const today = new Date();
+  const currentYear = today.getFullYear(); // 2026
+  const currentMonth = today.getMonth() + 1; // 8 (Agustus)
+  const currentDate = today.getDate(); // Tanggal hari ini
+
+  // 2. OPSI: Daftar tanggal penting khusus di bulan Agustus (misal: tanggal 16, 17, 20)
+  const tanggalPentingAgustus = [16, 17];
+
   let daysHtml = "";
   for (let day in diaryData[selectedYear][month]) {
-    daysHtml += `<button class="archive-btn" onclick="openDay('${day}')">Tgl ${day}</button>`;
+    // Cek apakah tanggal tombol = tanggal hari ini
+    const isHariIni =
+      Number(selectedYear) === currentYear &&
+      Number(month) === currentMonth &&
+      Number(day) === currentDate;
+
+    // Cek apakah masuk daftar tanggal penting bulan Agustus
+    const isAgustusPenting =
+      Number(month) === 8 && tanggalPentingAgustus.includes(Number(day));
+
+    // Jika pas hari ini ATAU tanggal penting, tempelkan badge tanda seru ❗️
+    const badge =
+      isHariIni || isAgustusPenting
+        ? `<span class="badge-penting">❗️</span>`
+        : "";
+
+    daysHtml += `<button class="archive-btn" onclick="openDay('${day}')">Tgl ${day} ${badge}</button>`;
   }
   document.getElementById("days-list").innerHTML = daysHtml;
 }
-
 function openDay(day) {
   document.getElementById("view-days").style.display = "none";
   document.getElementById("view-content").style.display = "block";
