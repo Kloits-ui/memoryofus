@@ -236,7 +236,7 @@ aku ngeliat kamu masih bisa berkembang dan bisa bekerja, aku malu dan aku khwati
 aku yang sekrang takut bangat di tinggal, beda dengan yang dulu yg gk peduli sama kemajuan orang lain, apa kata keluarga kamu kalo aku belum kerja.
 luka ini bener bener ganggu kehidupan aku, tapi aku juga gkmau terusterusan nyalahin kamu, tapi emg kamu salah satu penyebabnya hm
 hum,aku gtau lagi sampai kapan aku begini terus terusan, mungkin ada 1 hal emang yang terbaik buat kita masing2, maaf atas semuanya.`,
-      last: `hm, aku ingin pacaran sama kamu karena aku punya firasat kuat kita emang harusnya bersatu sampai tua, karena mau aku disukai atau mulai tertarik sama orang lain pasti kembalinya aku itu ke kamu
+      18: `hm, aku ingin pacaran sama kamu karena aku punya firasat kuat kita emang harusnya bersatu sampai tua, karena mau aku disukai atau mulai tertarik sama orang lain pasti kembalinya aku itu ke kamu
 
 yaa aku emang sengaja pacaran sama kamu di akhir masa sekolah, dan aku mau ngambil resiko besar untuk berniat sampai kita nikah (malu dah), awalnya aku harap semua akan berjalan lancar dan sesuai perhitungan aku, seharusnya aku bisa berkembang dan mengejar masa depan aku sambil membawa kamu bersama aku disetiap langkahku dan benar2 aku punya niatan untuk menikahi kamu (aku jujur walau aku malu bilangnya) karena aku sudah niatkan matang2
 
@@ -265,6 +265,7 @@ dan masih banyak lagi
 
 tapi ketika aku terluka karena kamu, yang ikut terasa hilang adalah semua makna yang selama ini aku kasih ke hubungan kita
 `,
+      29:`s`,
     },
   },
 };
